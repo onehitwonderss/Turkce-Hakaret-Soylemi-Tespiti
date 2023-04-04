@@ -51,7 +51,11 @@ class Options:
 	tokenizer_save_path = "./models/" + model_name + "/model/"
 ```
 Model seçmek için options.py dosyasıdan model_name değişkenini "mdeberta-v3-base" ya da "xlm-roberta-base" olarak belirtmeniz yeterlidir.
-Eğitime başlamadan önce train.py dosyasının bulunduğu dizinde models/model_name//model/ klasörlerini oluşturmanız gerekmektedir. Eğitim sonucu kat sayılar bu klasöre kayıt edilecektir.
+Eğitime başlamadan önce train.py dosyasının bulunduğu dizinde models/model_name//model/ klasörlerini oluşturmanız gerekmektedir. Eğitim sonucu kat sayılar bu klasöre kayıt edilecektir. Options parametlerini ayarladıktan sonra ve dataset pathini doğru girdiğinizden emin olduktan sonra aşağıdaki script ile eğitimi başlatabilirsiniz.
+
+```bash
+python train.py
+```
 
 # Pre-trained Modeller
 
