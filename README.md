@@ -52,3 +52,29 @@ class Options:
 ```
 Model seçmek için options.py dosyasıdan model_name değişkenini "mdeberta-v3-base" ya da "xlm-roberta-base" olarak belirtmeniz yeterlidir.
 Eğitime başlamadan önce train.py dosyasının bulunduğu dizinde models/model_name//model/ klasörlerini oluşturmanız gerekmektedir. Eğitim sonucu kat sayılar bu klasöre kayıt edilecektir.
+
+# Pre-trained Modeller
+
+Önceden eğitilmiş modelleri kullanmak için <a href= "https://drive.google.com/file/d/1-0hPfWsupW5y5nLZEzwSfp73RG3jA_km/view?usp=share_link" target="_blank" > mdeberta-v3 </a> ve <a href= "https://drive.google.com/file/d/1LqarxkF2wSWetbS5WQs6SxF95gwsO-Nx/view?usp=share_link" target="_blank" > xlm-roberta-base </a> linklerini kullanabilirsiniz. Modeller kullanmak için zip dosyalarını ./models/model_name (mdeberta-v3 ya da xlm-roberta-base)/model/ altına açmanız gerekmektedir.
+
+#Nasıl Kullanılır? 
+
+Eğitilmiş modeli predict_one_text.py scriptindeki örnek ile kullanabilirsiniz.
+```python
+if options.model_name == "mdeberta-v3-base":
+	model = AutoModelForSequenceClassification.from_pretrained(options.model_save_path)
+elif options.model_name == "xlm-roberta-base":
+	model = XLMRobertaForSequenceClassification.from_pretrained(options.model_save_path)
+else:
+	print('Geçersiz Model İsmi')
+
+
+id2label = {0:'INSULT', 1:'OTHER', 2:'PROFANITY', 3:'RACIST', 4:'SEXIST'}
+tokenizer = AutoTokenizer.from_pretrained(options.tokenizer_save_path)
+classifier = pipeline("text-classification", model=model, tokenizer=tokenizer)
+
+def predict(text):
+	result = id2label[int(classifier(text)[0]['label'].split('_')[-1])]
+	return result
+```
+
