@@ -10,7 +10,7 @@ Bu uygulamada türkçe metinlerde geçen hakaret içerikleri 5 farklı etiket de
 conda create -n env_name python==3.8
 ```
 
-# Kurulum
+# Kurulum 🎯
 Ön gereksinimler sağlandıktan sonra aşağıdaki komut ile kurulumu gerçekleştirebilirsiniz.
 
  
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 Çalışma kapsamında etiketlemiş olduğumuz 1000 adet etiketli veriyi <a href="https://drive.google.com/file/d/11s-T8R07C67UJZEx_Y66Xm7S9w5pfEbb/view?usp=share_link" target="_blank" > google drive </a> linkinden indirebilirsiniz.
 
-# Eğitim
+# Eğitim 🚀
 
 Model eğitmek için veri setinin path değerini options.py'da göstermeniz geremektedir. Ardından options.py dosyasında hyperparametreleri düzenleyerek eğitim denemesi yapabilirsiniz.
 
