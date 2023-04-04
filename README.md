@@ -28,3 +28,22 @@ scikit-learn
 ```bash
 pip install -r requirements.txt
 ```
+# Eğitim
+
+Model eğitmek için veri setinin path değerini options.py'da göstermeniz geremektedir. Ardından options.py dosyasında hyperparametreleri düzenleyerek eğitim denemesi yapabilirsiniz.
+
+```python
+
+class Options:
+	model_name = "mdeberta-v3-base" # or xlm-roberta-base
+	max_seq_len = 128
+	learning_rate = 2e-5
+	epochs = 1
+	batch_size = 4
+	data_source = "dataset.csv"
+	data_source_2 = None
+	model_save_path = "./models/" + model_name + "/model/"
+	tokenizer_save_path = "./models/" + model_name + "/model/"
+```
+Model seçmek için options.py dosyasıdan model_name değişkenini "mdeberta-v3-base" ya da "xlm-roberta-base" olarak belirtmeniz yeterlidir.
+Eğitime başlamadan önce train.py dosyasının bulunduğu dizinde models/model_name//model/ klasörlerini oluşturmanız gerekmektedir. Eğitim sonucu kat sayılar bu klasöre kayıt edilecektir.
