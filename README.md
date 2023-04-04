@@ -13,6 +13,18 @@ conda create -n env_name python==3.8
 # Kurulum
 Ön gereksinimler sağlandıktan sonra aşağıdaki komut ile kurulumu gerçekleştirebilirsiniz.
 
+ 
+Gerekli Kütüphane | Version
+------------ | -------------
+torch | 2.0.0
+torchvision | 0.15.1
+transformers | 4.18.0
+numpy | <1.24.0
+sentencepiece | 0.1.96
+nltk
+pandas
+scikit-learn
+
 ```bash
-pip install - requirements.txt
+pip install -r requirements.txt
 ```
