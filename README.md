@@ -28,6 +28,11 @@ scikit-learn
 ```bash
 pip install -r requirements.txt
 ```
+
+# Veri Kümesi
+
+Çalışma kapsamında etiketlemiş olduğumuz 1000 adet etiketli veriyi <p align="center"> <a href=["https://youtu.be/OZ5Cs1swN3A](https://drive.google.com/file/d/11s-T8R07C67UJZEx_Y66Xm7S9w5pfEbb/view?usp=share_link)" target="_blank" > google drive </a> </p> linkinden indirebilirsiniz.
+
 # Eğitim
 
 Model eğitmek için veri setinin path değerini options.py'da göstermeniz geremektedir. Ardından options.py dosyasında hyperparametreleri düzenleyerek eğitim denemesi yapabilirsiniz.
