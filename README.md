@@ -1,4 +1,4 @@
-# Teknofest 2023 Türkçe Hakaret Söylemi Tespiti
+# <p align="center">Teknofest 2023 Türkçe Hakaret Söylemi Tespiti </p>
 
 <p align="center"><img id="radius_deneme" src="https://user-images.githubusercontent.com/33387838/229937474-caa41f78-2169-4a5e-b50a-cde4fd1ee466.png" width="30%" height="30%" align="center"/></a> </p>
         
