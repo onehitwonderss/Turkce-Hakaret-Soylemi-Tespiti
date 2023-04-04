@@ -57,7 +57,7 @@ Eğitime başlamadan önce train.py dosyasının bulunduğu dizinde models/model
 
 Önceden eğitilmiş modelleri kullanmak için <a href= "https://drive.google.com/file/d/1-0hPfWsupW5y5nLZEzwSfp73RG3jA_km/view?usp=share_link" target="_blank" > mdeberta-v3 </a> ve <a href= "https://drive.google.com/file/d/1LqarxkF2wSWetbS5WQs6SxF95gwsO-Nx/view?usp=share_link" target="_blank" > xlm-roberta-base </a> linklerini kullanabilirsiniz. Modeller kullanmak için zip dosyalarını ./models/model_name (mdeberta-v3 ya da xlm-roberta-base)/model/ altına açmanız gerekmektedir.
 
-#Nasıl Kullanılır? 
+# Nasıl Kullanılır? 
 
 Eğitilmiş modeli predict_one_text.py scriptindeki örnek ile kullanabilirsiniz.
 ```python
