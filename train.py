@@ -56,6 +56,7 @@ def read_csv(path, path2 = None):
     df = pd.read_csv(path, encoding='utf-8', delimiter='|')
     print(dict(df.groupby("target").count()["id"]))
     if path2== None:
+        df['clean_text'] = df.text.apply(lambda x: clean_text(x))
         return df
     df_z = pd.read_csv(path2, encoding='utf-8', delimiter='|')
     non = pd.DataFrame(df.values.repeat(df.target=='OTHER', axis=0), columns=df.columns)
