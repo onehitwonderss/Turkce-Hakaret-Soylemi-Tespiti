@@ -5,6 +5,6 @@ class Options:
 	epochs = 8
 	batch_size = 4
 	data_source = "dataset.csv"
-	data_source_2 = "data_v2.csv"
+	data_source_2 = None
 	model_save_path = "./models/" + model_name + "/model/"
 	tokenizer_save_path = "./models/" + model_name + "/model/"
