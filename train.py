@@ -57,7 +57,7 @@ def read_csv(path, path2 = None):
     print(dict(df.groupby("target").count()["id"]))
     if path2== None:
         return df
-    df_z = pd.read_csv(path2, encoding='utf-8', delimiter=',')
+    df_z = pd.read_csv(path2, encoding='utf-8', delimiter='|')
     non = pd.DataFrame(df.values.repeat(df.target=='OTHER', axis=0), columns=df.columns)
     df_z['offansive'][58] = 1
     df_z.target = df_z.target.apply(lambda x: x.strip())
