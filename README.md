@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 # Veri Kümesi
 
-Çalışma kapsamında etiketlemiş olduğumuz 1000 adet etiketli veriyi <a href="https://drive.google.com/file/d/19TH6KZXqvohV4RRGf9vPfgp54kVPWrmP/view?usp=share_link" target="_blank" > google drive </a> linkinden indirebilirsiniz.
+Çalışma kapsamında etiketlemiş olduğumuz 1000 adet etiketli veriyi <a href="https://drive.google.com/file/d/1GIiw463XPfkUIgK5DLwXjup-NLLg7D-2/view?usp=share_link" target="_blank" > google drive </a> linkinden indirebilirsiniz.
 
 # Eğitim 🚀
 
