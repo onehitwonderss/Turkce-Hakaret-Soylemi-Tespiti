@@ -91,3 +91,7 @@ def predict(text):
 <a href= "https://huggingface.co/spaces/CanKorkut/finetune-mdeberta-v3-for-turkish-hatespeech-classification" target="_blank" > mdeberta-v3 </a>
 <a href= "https://huggingface.co/spaces/CanKorkut/turkish-hatespeech-detection" target="_blank" > xlm-roberta-base </a>
 
+# Ekip Üyeleri
+
+[Can Korkut](https://github.com/CanKorkut)
+[Zeynep Çay](https://github.com/zynpcy)
