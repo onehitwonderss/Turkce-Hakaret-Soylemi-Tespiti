@@ -89,5 +89,5 @@ def predict(text):
 Önceten eğitmiş olduğumuz modelleri aşağıdaki linklerden deneyin.
 
 <a href= "https://huggingface.co/spaces/CanKorkut/finetune-mdeberta-v3-for-turkish-hatespeech-classification" target="_blank" > mdeberta-v3 </a>
-<a href= "https://huggingface.co/spaces/CanKorkut/turkish-hatespeech-detection" target="_blank" > mdeberta-v3 </a>
+<a href= "https://huggingface.co/spaces/CanKorkut/turkish-hatespeech-detection" target="_blank" > xlm-roberta-base </a>
 
